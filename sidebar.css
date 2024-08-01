@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(9, 3, 26);
+    padding: 30px 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.sidebar:hover {
+    width: 280px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+.image {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.title {
+    color: white;
+    font-size: 18px;
+    font-weight : 600;
+    padding-left: 20px;
+
+}
+
+.menu {
+    height: 78%;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.menu-title {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.line {
+    position: relative;
+}
+.line .menu-title{
+    opacity: 0;
+}
+.sidebar:hover .line .menu-title{
+    opacity: 1;
+}
+.menu-separator {
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    width: 100%;
+    background: white;
+}
+.sidebar:hover .menu-separator{
+    opacity: 0;
+}
+
+.box {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+.box:hover {
+    background-color: rgb(139, 125, 125);
+}
+.names {
+    font-size: 15px;
+    padding-left: 15px;
+}
+.caption {
+    color: white;
+    display: block;
+    font-size: 12px;
+}
+.main-menu-box {
+    margin-bottom: 15px;
+}
+
+.general-box {
+    margin-bottom: 15px;
+}
+.name-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.account {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: fixed;
+    bottom: 0px;
+}
+.caption {
+    padding-left: 21px;
+}
+
+
